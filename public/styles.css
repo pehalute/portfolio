@@ -1,0 +1,129 @@
+html, body, header, .mv {
+  height: 100%;
+}
+
+body {
+  overflow-y: scroll;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+header {
+  width: 100%;
+  height: 100%;
+  background-image: url("img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+#name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 2;
+  color: #fff;
+}
+
+#name h1 {
+  text-align: center;
+  font-size: 53px;
+  margin: 0;
+}
+
+#name p {
+  font-style: italic;
+  text-align: center;
+  font-size: 22px;
+  margin: 0;
+}
+
+#skills {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(6, 50px);
+  grid-template-areas: 
+    "ht re re"
+    "ht re re"
+    "cs cs ra"
+    "cs cs fi"
+    "do bo sw"
+    "gi vu et"
+  ;
+  gap: 5px;
+  margin: 20px auto;
+  flex-grow: 1;
+  color: #fff;
+}
+
+#html {
+  background: #EC407A;
+  grid-area: ht;
+}
+#responsive {
+  background: #7E57C2;
+  grid-area: re;
+}
+#animation {
+  background: #FF8A65;
+  grid-area: cs;
+}
+#rails {
+  background: #4DD0E1;
+  grid-area: ra;
+}
+#firebase {
+  background: #E57373;
+  grid-area: fi;
+}
+#docker {
+  background: #DCE775;
+  grid-area: do;
+}
+#bootstrap {
+  background: #64B5F6;
+  grid-area: bo;
+}
+#swift {
+  background: #FFD54F;
+  grid-area: sw;
+}
+#git {
+  background: #4DB6AC;
+  grid-area: gi;
+}
+#vue {
+  background: #81C784;
+  grid-area: vu;
+}
+#etc {
+  background: #90A4AE;
+  grid-area: et;
+}
+
+#detail{
+  display: block;
+  margin: 0 auto 5px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#detail span {
+  display: block;
+}
+
+#detail img {
+  width: 30px;
+  height: 18px;
+  object-fit: cover;
+}
