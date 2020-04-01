@@ -16,7 +16,7 @@ header {
   background-position: center;
 }
 
-.container {
+header > .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -58,9 +58,34 @@ header {
     "gi vu et"
   ;
   gap: 5px;
-  margin: 20px auto;
+  margin: 0px auto;
   flex-grow: 1;
   color: #fff;
+}
+
+#skills > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#skills .skill-container {
+  margin: 0 auto;
+}
+
+#skills h1 {
+  font-size: 15px;
+  margin: 0;
+  letter-spacing: .1em;
+}
+
+#skills p {
+  font-size: 11px;
+  margin: 8px 0 0;
+  line-height: 1.3;
+  font-weight: bold;
+  letter-spacing: .1em;
 }
 
 #html {
@@ -90,6 +115,9 @@ header {
 #bootstrap {
   background: #64B5F6;
   grid-area: bo;
+}
+#bootstrap h1 {
+  font-size: 12px;
 }
 #swift {
   background: #FFD54F;
