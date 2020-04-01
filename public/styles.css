@@ -145,6 +145,8 @@ header > .container {
 
 #detail span {
   display: block;
+  text-decoration: none;
+  color: #fff;
 }
 
 #detail img {
@@ -156,13 +158,14 @@ header > .container {
 main {
   width: 310px;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 main > section > h1 {
   font-size: 18px;
   text-align: center;
   color: #6E6E6E;
-  margin: 20px;
+  margin: 25px 0 20px;
 }
 
 main > section > h1::before {
@@ -181,6 +184,7 @@ main > section > h1::after {
   color: #6E6E6E;
   margin: 20px 0;
 }
+
 
 .card h1 {
   color: #6E6E6E;
@@ -215,6 +219,98 @@ main > section > h1::after {
 
 #skills li {
   width: 50%;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.5;
+}
+
+#worksContainer .card img {
+   margin: -20px -30px 20px;
+   width: calc(100% + 60px);
+ }
+
+#worksContainer .card table {
+   font-size: 12px
+}
+
+#worksContainer .card table {
+  width: 220px;
+  margin: 0 auto;
+}
+
+#worksContainer .card table th{
+  position: relative;
+  text-align: right;
+  width: 60px;
+  padding-right: 23px;
+}
+
+#worksContainer .card table th:after{
+  display: block;
+  content: "";
+  width: 15px;
+  height: 2px;
+  background-color: #6E6E6E;
+  position: absolute;
+  top: calc(50% - 1px);
+  right: 0px;
+  border-radius: 1px;
+}
+
+#worksContainer .card table td{
+  width: 130px;
+  padding-left: 7px;
+}
+
+footer {
+  background: #F5F5F5;
+  padding: 30px 30px 15px;
+  text-align: center;
+}
+
+footer h1 {
+  font-size: 17px;
+  color: #6E6E6E;
+  margin-bottom: 30px;
+}
+
+footer .SNSButton {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 20px;
+  color: #fff;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 6px #bbb;
+}
+
+footer .SNSButton span {
+  display: block;
+  flex-grow: 1;
+  text-align: center;
+}
+
+footer .SNSButton img {
+  width: 35px;
+  height: 20px;
+}
+
+footer #twitter {
+  background: #03A9F4;
+}
+
+footer #github {
+  background: #747474;
+}
+
+footer #mail {
+  background: #FFC107;
+}
+
+footer .copylight {
+  font-size: 11px;
+  color: #6E6E6E;
+  margin-top: 30px;
 }
