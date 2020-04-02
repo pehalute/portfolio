@@ -320,7 +320,8 @@ footer #twitter svg,
 footer #github svg{
   fill: rgba(0,0,0,0);
   stroke: #fff;
-  stroke-width: 35px;
+  stroke-width: 40px;
+  stroke-linejoin: round;
 }
 
 footer #mail svg {

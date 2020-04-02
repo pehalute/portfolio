@@ -124,6 +124,7 @@
   footer .SNSButton svg {
     width: 75px;
     height: 60px;
+    padding: 5px;
   }
 
   footer .copylight {
