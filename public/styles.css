@@ -75,6 +75,7 @@ header > .container {
   margin: 0;
   letter-spacing: .1em;
   line-height: 1.4;
+  vertical-align: middle;
 }
 
 #skillsTable p {
@@ -185,15 +186,15 @@ main > section > h1::after {
   margin: 20px 0;
 }
 
-
 .card h1 {
   color: #6E6E6E;
   font-size: 18px;
+  margin-top: 0;
 }
 
 #aboutMySelf .card {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
@@ -209,12 +210,14 @@ main > section > h1::after {
 #aboutMySelf img {
   width: 50px;
   height: 50px;
+  margin-right: 10px;
 }
 
 #skills ul {
   display: flex;
   flex-wrap: wrap;
   padding-left: 15px;
+  margin: 0;
 }
 
 #skills li {
@@ -253,12 +256,16 @@ main > section > h1::after {
   position: absolute;
   top: calc(50% - 1px);
   right: 0px;
-  border-radius: 1px;
+  border-radius: 2px;
 }
 
 #worksContainer .card table td{
   width: 130px;
   padding-left: 7px;
+}
+
+#worksContainer .card table a{
+  word-break: break-all;
 }
 
 footer {
@@ -278,11 +285,11 @@ footer .SNSButton {
   align-items: center;
   text-decoration: none;
   font-size: 17px;
-  line-height: 20px;
+  line-height: 30px;
   color: #fff;
   margin: 10px;
   padding: 10px 20px;
-  border-radius: 20px;
+  border-radius: 30px;
   box-shadow: 5px 5px 6px #bbb;
 }
 
@@ -292,9 +299,9 @@ footer .SNSButton span {
   text-align: center;
 }
 
-footer .SNSButton img {
-  width: 35px;
-  height: 20px;
+footer .SNSButton svg {
+  width: 40px;
+  height: 30px;
 }
 
 footer #twitter {
@@ -307,6 +314,17 @@ footer #github {
 
 footer #mail {
   background: #FFC107;
+}
+
+footer #twitter svg,
+footer #github svg{
+  fill: rgba(0,0,0,0);
+  stroke: #fff;
+  stroke-width: 35px;
+}
+
+footer #mail svg {
+  fill: #fff;
 }
 
 footer .copylight {

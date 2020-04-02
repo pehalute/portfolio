@@ -1,0 +1,134 @@
+@media screen and (min-width: 700px) {
+  /* tablet */
+  #name h1 {
+    font-size: 90px;
+  }
+  
+  #name p {
+    font-size: 35px;
+  }
+
+  #skillsTable {
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(6, 90px);
+    gap: 12px;
+  }
+
+  #skillsTable h1 {
+    font-size: 32px;
+  }
+
+  #skillsTable p {
+    font-size: 19px;
+  }
+
+  #detail {
+    font-size: 40px;
+  }
+
+  #detail img {
+    width: 45px;
+    height: 30px;
+  }
+
+  main {
+    width: 700px;
+  }
+  
+  main > section > h1 {
+    font-size: 40px;
+    margin: 50px 0 45px;
+  }
+
+  .card {
+    padding: 60px 70px;
+    border-radius: 6px;
+    margin: 45px 0;
+    box-shadow: 7px 7px 9px #bbb;
+  }
+
+  .card h1 {
+    font-size: 40px;
+  }
+
+  #aboutMySelf p {
+    font-size: 26px;
+  }
+  
+  #aboutMySelf p:last-of-type {
+    margin-top: 30px;
+  }
+  
+  #aboutMySelf img {
+    width: 90px;
+    height: 90px;
+    margin-right: 40px;
+  }
+
+  #skills ul {
+    padding-left: 45px;
+  }
+  
+  #skills li {
+    font-size: 36px;
+  }
+
+  #worksContainer .card img {
+    margin: -60px -70px 60px;
+    width: calc(100% + 140px);
+  }
+
+  #worksContainer .card table {
+    font-size: 28px
+  }
+
+  #worksContainer .card table {
+    width: 500px;
+  }
+
+  #worksContainer .card table th{
+    width: 150px;
+    padding-right: 40px;
+  }
+
+  #worksContainer .card table th:after{
+    width: 30px;
+    height: 4px;
+    top: calc(50% - 2px);
+    border-radius: 4px;
+  }
+
+  #worksContainer .card table td{
+    width: 300px;
+    padding-left: 10px;
+  }
+
+  footer {
+    padding: 70px 70px 35px;
+  }
+
+  footer h1 {
+    font-size: 40px;
+    margin-bottom: 70px;
+  }
+
+  footer .SNSButton {
+    font-size: 40px;
+    line-height: 60px;
+    margin: 20px;
+    padding: 20px 35px;
+    border-radius: 60px;
+    box-shadow: 8px 8px 10px #bbb;
+  }
+
+  footer .SNSButton svg {
+    width: 75px;
+    height: 60px;
+  }
+
+  footer .copylight {
+    font-size: 26px;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+}
