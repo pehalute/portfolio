@@ -246,6 +246,10 @@ main > section > h1::after {
   cursor: pointer;
 }
 
+#works .card h1 a {
+  color: #6E6E6E;
+}
+
 #works .card h1 span {
   font-size: 11px;
 }
