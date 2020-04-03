@@ -4,18 +4,14 @@ body {
 }
 
 header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   height: calc(var(--vh, 1vh) * 100);
   background-image: url("img/bg.jpg");
   background-size: cover;
   background-position: center;
-}
-
-header > .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
 }
 
 #name {
@@ -75,7 +71,9 @@ header > .container {
   margin: 0;
   letter-spacing: .1em;
   line-height: 1.4;
-  vertical-align: middle;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-top: 0.2em;
 }
 
 #skillsTable p {
@@ -181,7 +179,6 @@ main > section > h1::after {
   background: #F5F5F5;
   box-shadow: 5px 5px 6px #bbb;
   border-radius: 4px;
-  padding: 20px 30px;
   color: #6E6E6E;
   margin: 20px 0;
 }
@@ -196,6 +193,7 @@ main > section > h1::after {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px 30px;
 }
 
 #aboutMySelf p {
@@ -213,6 +211,10 @@ main > section > h1::after {
   margin-right: 10px;
 }
 
+#skills .card {
+  padding: 20px 30px;
+}
+
 #skills ul {
   display: flex;
   flex-wrap: wrap;
@@ -226,28 +228,53 @@ main > section > h1::after {
   line-height: 1.5;
 }
 
-#worksContainer .card img {
-   margin: -20px -30px 20px;
-   width: calc(100% + 60px);
- }
-
-#worksContainer .card table {
-   font-size: 12px
+#works .card {
+  padding-bottom: 20px;
 }
 
-#worksContainer .card table {
+#works .card img {
+   margin-bottom: 20px;
+   width: 100%;
+   border-radius: 4px 4px 0 0;
+ }
+
+#works .card h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-decoration: underline solid #6E6E6E;
+  cursor: pointer;
+}
+
+#works .card h1 span {
+  font-size: 11px;
+}
+
+#works .card h1::after {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-image: url(img/link.svg);
+  background-size: contain;
+  vertical-align: bottom;
+  margin-bottom: 2px;
+}
+
+#works .card table {
+  font-size: 12px;
   width: 220px;
   margin: 0 auto;
 }
 
-#worksContainer .card table th{
+#works .card table th{
   position: relative;
   text-align: right;
   width: 60px;
   padding-right: 23px;
 }
 
-#worksContainer .card table th:after{
+#works .card table th:after{
   display: block;
   content: "";
   width: 15px;
@@ -259,12 +286,12 @@ main > section > h1::after {
   border-radius: 2px;
 }
 
-#worksContainer .card table td{
+#works .card table td{
   width: 130px;
   padding-left: 7px;
 }
 
-#worksContainer .card table a{
+#works .card table a{
   word-break: break-all;
 }
 
@@ -299,7 +326,7 @@ footer .SNSButton span {
   text-align: center;
 }
 
-footer .SNSButton svg {
+footer .SNSButton img{
   width: 40px;
   height: 30px;
 }
@@ -314,18 +341,6 @@ footer #github {
 
 footer #mail {
   background: #FFC107;
-}
-
-footer #twitter svg,
-footer #github svg{
-  fill: rgba(0,0,0,0);
-  stroke: #fff;
-  stroke-width: 40px;
-  stroke-linejoin: round;
-}
-
-footer #mail svg {
-  fill: #fff;
 }
 
 footer .copylight {
