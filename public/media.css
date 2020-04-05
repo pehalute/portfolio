@@ -1,34 +1,33 @@
 @media screen and (min-width: 700px) {
   /* tablet */
   #name h1 {
-    font-size: 90px;
+    font-size: 12vw;
   }
   
   #name p {
-    font-size: 35px;
+    font-size: 5vw;
   }
 
   #skillsTable {
-    grid-template-columns: repeat(3, 200px);
-    grid-template-rows: repeat(6, 90px);
-    gap: 12px;
+    grid-template-columns: repeat(3, 22vw);
+    grid-template-rows: repeat(6, 11vw);
   }
 
   #skillsTable h1 {
-    font-size: 32px;
+    font-size: 3vw;
   }
 
   #skillsTable p {
-    font-size: 19px;
+    font-size: 2.2vw;
   }
 
   #detail {
-    font-size: 40px;
+    font-size: 5.2vw;
   }
 
   #detail img {
-    width: 45px;
-    height: 30px;
+    width: 6w;
+    height: 4.5vw;
   }
 
   main {
@@ -145,6 +144,10 @@
     box-shadow: 8px 8px 10px #bbb;
   }
 
+  footer #mail {
+    font-size: 35px;
+  }
+
   footer .SNSButton img {
     width: 75px;
     height: 60px;
@@ -163,44 +166,52 @@
     flex-direction: row;
     align-items: center;
     position: relative;
+    justify-content: space-around;
   }
 
+  #name {
+    flex-grow: 0;
+  }
+  
   #name h1 {
-    font-size: 84px;
+    font-size: 5vw;
   }
   
   #name p {
-    font-size: 35px;
+    font-size: 2vw;
   }
 
   #skillsTable {
-    grid-template-columns: repeat(3, 160px);
-    grid-template-rows: repeat(6, 70px);
+    grid-template-columns: repeat(3, 12vw);
+    grid-template-rows: repeat(6, 5vw);
     gap: 15px;
+    flex-grow: 0;
+    margin: 0;
   }
 
   #skillsTable h1 {
-    font-size: 26px;
+    font-size: 1.9vw;
   }
 
   #skillsTable p {
-    font-size: 15px;
+    font-size: 1vw;
   }
 
   #bootstrap h1 {
-    font-size: 20px;
+    font-size: 1.5vw;
   }
 
   #detail {
-    font-size: 40px;
+    font-size: 2.5vw;
     width: 100%;             
     position: absolute;
     bottom: 0;
+    margin-bottom: .5vw;
   }
 
   #detail img {
-    height: 30px;
-    width: 40px;
+    height: 2vw;
+    width: 2.5vw;
   }
 
   main {
