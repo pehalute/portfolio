@@ -156,6 +156,7 @@ header {
   width: 7vw;
   height: 5vw;
   object-fit: cover;
+  vertical-align: middle;
 }
 
 main {
@@ -350,6 +351,19 @@ footer #github {
 footer #mail {
   background: #FFC107;
   font-size: 15px;
+  cursor: pointer;
+}
+
+footer #baloon {
+  position: absolute;
+  background: #39D300;
+  font-size: 10px;
+  line-height: 10px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 6px #bbb;
+  color: #fff;
+  display: none;
 }
 
 footer .copylight {
@@ -357,13 +371,3 @@ footer .copylight {
   color: #6E6E6E;
   margin-top: 30px;
 }
-
-
-
-/* font-family: heebo, sans-serif;
-font-weight: 300;
-font-style: normal; */
-
-/* font-family: heebo, sans-serif;
-font-weight: 900;
-font-style: normal; */
