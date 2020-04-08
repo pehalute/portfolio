@@ -14,6 +14,7 @@ header {
   background-image: url("img/bg.jpg");
   background-size: cover;
   background-position: center;
+  color: #fff;
 }
 
 #name {
@@ -22,7 +23,6 @@ header {
   justify-content: center;
   align-items: center;
   flex-grow: 2;
-  color: #fff;
   font-family: heebo, sans-serif;
   font-style: normal;
 }
@@ -57,9 +57,8 @@ header {
     "gi vu et"
   ;
   gap: 1.5vw;
-  margin: 0px auto;
   flex-grow: 1;
-  color: #fff;
+  margin: 0px auto;
 }
 
 #skillsTable > div {
@@ -74,11 +73,11 @@ header {
 }
 
 #skillsTable h1 {
-  font-size: 3.5vw;
   margin: 0;
+  font-size: 3.5vw;
+  font-weight: 900;
   letter-spacing: .1em;
   line-height: 1.4;
-  font-weight: 900;
 }
 
 #skillsTable p {
@@ -138,12 +137,12 @@ header {
 
 #detail{
   display: block;
-  margin: 0 auto 2vw;
+  margin: 0 auto;
+  font-size: 6vw;
+  font-weight: 700;
   text-decoration: none;
   text-align: center;
   color: #fff;
-  font-size: 6vw;
-  font-weight: 700;
 }
 
 #detail span {
@@ -153,22 +152,23 @@ header {
 }
 
 #detail img {
+  position: relative;
+  bottom: 2vw;
   width: 7vw;
   height: 5vw;
   object-fit: cover;
-  vertical-align: middle;
 }
 
 main {
   width: 310px;
   margin: 0 auto;
   margin-bottom: 50px;
+  color: #6E6E6E;
 }
 
 main > section > h1 {
   font-size: 18px;
   text-align: center;
-  color: #6E6E6E;
   margin: 25px 0 20px;
 }
 
@@ -182,14 +182,13 @@ main > section > h1::after {
 
 .card {
   background: #F5F5F5;
-  box-shadow: 5px 5px 6px #bbb;
+  box-shadow: 4px 4px 5px #bbb;
   border-radius: 4px;
   color: #6E6E6E;
   margin: 20px 0;
 }
 
 .card h1 {
-  color: #6E6E6E;
   font-size: 18px;
   margin-top: 0;
 }
@@ -230,7 +229,7 @@ main > section > h1::after {
 #skills li {
   width: 50%;
   font-size: 15px;
-  line-height: 1.5;
+  margin: 5px 0;
 }
 
 #works .card {
@@ -325,7 +324,7 @@ footer .SNSButton {
   color: #fff;
   margin: 10px;
   padding: 10px 20px;
-  border-radius: 30px;
+  border-radius: 25px;
   box-shadow: 5px 5px 6px #bbb;
 }
 
@@ -338,6 +337,10 @@ footer .SNSButton span {
 footer .SNSButton img{
   width: 40px;
   height: 30px;
+}
+
+footer #gform {
+  background: #673AB7;
 }
 
 footer #twitter {
@@ -360,10 +363,12 @@ footer #baloon {
   font-size: 10px;
   line-height: 10px;
   padding: 10px 20px;
-  border-radius: 30px;
-  box-shadow: 5px 5px 6px #bbb;
+  border-radius: 15px;
+  box-shadow: 2px 2px 6px #bbb;
   color: #fff;
   display: none;
+  transform: translateX(-50%);
+white-space: nowrap;
 }
 
 footer .copylight {

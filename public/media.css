@@ -1,5 +1,4 @@
 @media screen and (min-width: 700px) {
-  /* tablet */
   #name h1 {
     font-size: 12vw;
   }
@@ -140,18 +139,25 @@
     line-height: 60px;
     margin: 20px;
     padding: 20px 35px;
-    border-radius: 60px;
+    border-radius: 50px;
     box-shadow: 8px 8px 10px #bbb;
+  }
+  
+  footer .SNSButton img {
+    width: 75px;
+    height: 60px;
+    padding: 5px;
   }
 
   footer #mail {
     font-size: 35px;
   }
 
-  footer .SNSButton img {
-    width: 75px;
-    height: 60px;
-    padding: 5px;
+  footer #baloon {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 20px 40px;
+    border-radius: 30px;
   }
 
   footer .copylight {
@@ -161,7 +167,7 @@
   }
 }
 
-@media screen and (min-width: 1020px) {
+@media screen and (orientation: landscape){
   header {
     flex-direction: row;
     align-items: center;
@@ -172,19 +178,19 @@
   #name {
     flex-grow: 0;
   }
-  
+
   #name h1 {
-    font-size: 5vw;
+    font-size: 7vw;
   }
-  
+
   #name p {
-    font-size: 2vw;
+    font-size: 3vw;
   }
 
   #skillsTable {
     grid-template-columns: repeat(3, 12vw);
     grid-template-rows: repeat(6, 5vw);
-    gap: 15px;
+    gap: .5vw;
     flex-grow: 0;
     margin: 0;
   }
@@ -207,6 +213,27 @@
     position: absolute;
     bottom: 0;
     margin-bottom: .5vw;
+  }
+
+  #detail img {
+    height: 2.5vw;
+    width: 3vw;
+    margin-top: -2vw;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 1020px) {
+  #name h1 {
+    font-size: 5vw;
+  }
+  
+  #name p {
+    font-size: 2vw;
+  }
+
+  #skillsTable {
+    grid-template-columns: repeat(3, 12vw);
+    grid-template-rows: repeat(6, 5vw);
   }
 
   #detail img {
