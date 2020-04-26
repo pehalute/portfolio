@@ -246,7 +246,7 @@ main > section > h1::after {
           box-shadow: 4px 4px 5px #bbb;
   border-radius: 4px;
   color: #6E6E6E;
-  margin: 0;
+  margin: 20px 0;
 }
 
 .card h1 {
@@ -305,6 +305,7 @@ main > section > h1::after {
 
 #works .card {
   padding-bottom: 20px;
+  margin: 0;
 }
 
 #works .card img {
