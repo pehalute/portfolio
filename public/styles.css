@@ -7,15 +7,9 @@ body {
 
 header {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   height: calc(var(--vh, 1vh) * 100);
   background-image: url("img/bg.jpg");
@@ -25,22 +19,11 @@ header {
 }
 
 #name {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 2;
   font-family: heebo, sans-serif;
   font-style: normal;
 }
@@ -63,11 +46,8 @@ header {
 }
 
 #skillsTable {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 26vw 1.5vw 26vw 1.5vw 26vw;
   grid-template-columns: repeat(3, 26vw);
-  -ms-grid-rows: 12vw 1.5vw 12vw 1.5vw 12vw 1.5vw 12vw 1.5vw 12vw 1.5vw 12vw;
   grid-template-rows: repeat(6, 12vw);
       grid-template-areas: 
     "ht re re"
@@ -78,26 +58,15 @@ header {
     "gi vu et"
   ;
   gap: 1.5vw;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   margin: 0px auto;
 }
 
 #skillsTable > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 #skillsTable .skillContainer {
@@ -120,49 +89,30 @@ header {
 }
 
 #html {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 1;
   background: #EC407A;
   grid-area: ht;
 }
 #responsive {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 3;
   background: #7E57C2;
   grid-area: re;
 }
 #animation {
-  -ms-grid-row: 5;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   background: #FF8A65;
   grid-area: cs;
 }
 #rails {
-  -ms-grid-row: 5;
-  -ms-grid-column: 5;
   background: #4DD0E1;
   grid-area: ra;
 }
 #firebase {
-  -ms-grid-row: 7;
-  -ms-grid-column: 5;
   background: #E57373;
   grid-area: fi;
 }
 #docker {
-  -ms-grid-row: 9;
-  -ms-grid-column: 1;
   background: #DCE775;
   grid-area: do;
 }
 #bootstrap {
-  -ms-grid-row: 9;
-  -ms-grid-column: 3;
   background: #64B5F6;
   grid-area: bo;
 }
@@ -170,26 +120,18 @@ header {
   font-size: 12px;
 }
 #swift {
-  -ms-grid-row: 9;
-  -ms-grid-column: 5;
   background: #FFD54F;
   grid-area: sw;
 }
 #git {
-  -ms-grid-row: 11;
-  -ms-grid-column: 1;
   background: #4DB6AC;
   grid-area: gi;
 }
 #vue {
-  -ms-grid-row: 11;
-  -ms-grid-column: 3;
   background: #81C784;
   grid-area: vu;
 }
 #etc {
-  -ms-grid-row: 11;
-  -ms-grid-column: 5;
   background: #90A4AE;
   grid-area: et;
 }
@@ -255,15 +197,9 @@ main > section > h1::after {
 }
 
 #aboutMySelf .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   padding: 20px 30px;
 }
 
@@ -288,11 +224,8 @@ main > section > h1::after {
 }
 
 #skills ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding-left: 15px;
   margin: 0;
 }
@@ -309,17 +242,16 @@ main > section > h1::after {
 }
 
 #works .card img {
-   margin-bottom: 20px;
-   width: 100%;
-   border-radius: 4px 4px 0 0;
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 4px 4px 0 0;
  }
 
 #works .card h1 {
   font-size: 20px;
   margin-bottom: 20px;
   text-align: center;
-  -webkit-text-decoration: underline solid #6E6E6E;
-          text-decoration: underline solid #6E6E6E;
+  text-decoration: underline solid #6E6E6E;
   cursor: pointer;
 }
 
@@ -389,28 +321,21 @@ footer h1 {
 }
 
 footer .SNSButton {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-decoration: none;
   font-size: 17px;
   line-height: 30px;
   color: #fff;
   margin: 10px;
   padding: 10px 20px;
-  border-radius: 25;
-  -webkit-box-shadow: 5px 5px 6px #bbb;
-          box-shadow: 5px 5px 6px #bbb;
+  border-radius: 25px;
+  box-shadow: 5px 5px 6px #bbb;
 }
 
 footer .SNSButton span {
   display: block;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   text-align: center;
 }
 
@@ -444,14 +369,11 @@ footer #baloon {
   line-height: 10px;
   padding: 10px 20px;
   border-radius: 15px;
-  -webkit-box-shadow: 2px 2px 6px #bbb;
-          box-shadow: 2px 2px 6px #bbb;
+  box-shadow: 2px 2px 6px #bbb;
   color: #fff;
   display: none;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-white-space: nowrap;
+  transform: translateX(-50%);
+  white-space: nowrap;
 }
 
 footer .copylight {

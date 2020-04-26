@@ -1,4 +1,4 @@
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 750px) {
   #name h1 {
     font-size: 12vw;
   }
@@ -8,100 +8,8 @@
   }
 
   #skillsTable {
-    -ms-grid-columns: (22vw)[3];
     grid-template-columns: repeat(3, 22vw);
-    -ms-grid-rows: (11vw)[6];
     grid-template-rows: repeat(6, 11vw);
-  }
-
-  #skillsTable > *:nth-child(1) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-
-  #skillsTable > *:nth-child(2) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-  }
-
-  #skillsTable > *:nth-child(3) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-  }
-
-  #skillsTable > *:nth-child(4) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-  }
-
-  #skillsTable > *:nth-child(5) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-  }
-
-  #skillsTable > *:nth-child(6) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 3;
-  }
-
-  #skillsTable > *:nth-child(7) {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-  }
-
-  #skillsTable > *:nth-child(8) {
-    -ms-grid-row: 3;
-    -ms-grid-column: 2;
-  }
-
-  #skillsTable > *:nth-child(9) {
-    -ms-grid-row: 3;
-    -ms-grid-column: 3;
-  }
-
-  #skillsTable > *:nth-child(10) {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-  }
-
-  #skillsTable > *:nth-child(11) {
-    -ms-grid-row: 4;
-    -ms-grid-column: 2;
-  }
-
-  #skillsTable > *:nth-child(12) {
-    -ms-grid-row: 4;
-    -ms-grid-column: 3;
-  }
-
-  #skillsTable > *:nth-child(13) {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
-  }
-
-  #skillsTable > *:nth-child(14) {
-    -ms-grid-row: 5;
-    -ms-grid-column: 2;
-  }
-
-  #skillsTable > *:nth-child(15) {
-    -ms-grid-row: 5;
-    -ms-grid-column: 3;
-  }
-
-  #skillsTable > *:nth-child(16) {
-    -ms-grid-row: 6;
-    -ms-grid-column: 1;
-  }
-
-  #skillsTable > *:nth-child(17) {
-    -ms-grid-row: 6;
-    -ms-grid-column: 2;
-  }
-
-  #skillsTable > *:nth-child(18) {
-    -ms-grid-row: 6;
-    -ms-grid-column: 3;
   }
 
   #skillsTable h1 {
@@ -134,8 +42,6 @@
   .card {
     border-radius: 6px;
     margin: 45px 0;
-    -webkit-box-shadow: 7px 7px 9px #bbb;
-            box-shadow: 7px 7px 9px #bbb;
   }
 
   .card h1 {
@@ -220,32 +126,31 @@
   }
 
   footer {
-    padding: 70px 70px;
+    padding: 50px 70px;
   }
 
   footer h1 {
     font-size: 40px;
-    margin-bottom: 70px;
+    margin: 0 0 50px;
   }
 
   footer .SNSButton {
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 30px;
+    line-height: 30px;
     margin: 20px;
     padding: 20px 35px;
     border-radius: 50px;
-    -webkit-box-shadow: 8px 8px 10px #bbb;
-            box-shadow: 8px 8px 10px #bbb;
+    box-shadow: 8px 8px 10px #bbb;
   }
   
   footer .SNSButton img {
-    width: 75px;
-    height: 60px;
+    width: 35px;
+    height: 30px;
     padding: 0 5px;
   }
 
   footer #mail {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   footer #baloon {
@@ -257,29 +162,21 @@
 
   footer .copylight {
     font-size: 26px;
-    margin-top: 70px;
+    margin-top: 50px;
     margin-bottom: 0;
   }
 }
 
 @media screen and (orientation: landscape){
   header {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: row;
+    align-items: center;
     position: relative;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
 
   #name {
-    -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
+    flex-grow: 0;
   }
 
   #name h1 {
@@ -291,106 +188,14 @@
   }
 
   #skillsTable {
-    -ms-grid-columns: 12vw .5vw 12vw .5vw 12vw;
     grid-template-columns: repeat(3, 12vw);
-    -ms-grid-rows: 5vw .5vw 5vw .5vw 5vw .5vw 5vw .5vw 5vw .5vw 5vw;
     grid-template-rows: repeat(6, 5vw);
     gap: .5vw;
-    -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
+    flex-grow: 0;
     margin: 0;
   }
 
-  #skillsTable > *:nth-child(1) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
 
-  #skillsTable > *:nth-child(2) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-  }
-
-  #skillsTable > *:nth-child(3) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 5;
-  }
-
-  #skillsTable > *:nth-child(4) {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-  }
-
-  #skillsTable > *:nth-child(5) {
-    -ms-grid-row: 3;
-    -ms-grid-column: 3;
-  }
-
-  #skillsTable > *:nth-child(6) {
-    -ms-grid-row: 3;
-    -ms-grid-column: 5;
-  }
-
-  #skillsTable > *:nth-child(7) {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
-  }
-
-  #skillsTable > *:nth-child(8) {
-    -ms-grid-row: 5;
-    -ms-grid-column: 3;
-  }
-
-  #skillsTable > *:nth-child(9) {
-    -ms-grid-row: 5;
-    -ms-grid-column: 5;
-  }
-
-  #skillsTable > *:nth-child(10) {
-    -ms-grid-row: 7;
-    -ms-grid-column: 1;
-  }
-
-  #skillsTable > *:nth-child(11) {
-    -ms-grid-row: 7;
-    -ms-grid-column: 3;
-  }
-
-  #skillsTable > *:nth-child(12) {
-    -ms-grid-row: 7;
-    -ms-grid-column: 5;
-  }
-
-  #skillsTable > *:nth-child(13) {
-    -ms-grid-row: 9;
-    -ms-grid-column: 1;
-  }
-
-  #skillsTable > *:nth-child(14) {
-    -ms-grid-row: 9;
-    -ms-grid-column: 3;
-  }
-
-  #skillsTable > *:nth-child(15) {
-    -ms-grid-row: 9;
-    -ms-grid-column: 5;
-  }
-
-  #skillsTable > *:nth-child(16) {
-    -ms-grid-row: 11;
-    -ms-grid-column: 1;
-  }
-
-  #skillsTable > *:nth-child(17) {
-    -ms-grid-row: 11;
-    -ms-grid-column: 3;
-  }
-
-  #skillsTable > *:nth-child(18) {
-    -ms-grid-row: 11;
-    -ms-grid-column: 5;
-  }
 
   #skillsTable h1 {
     font-size: 1.9vw;
@@ -428,100 +233,8 @@
   }
 
   #skillsTable {
-    -ms-grid-columns: (12vw)[3];
     grid-template-columns: repeat(3, 12vw);
-    -ms-grid-rows: (5vw)[6];
     grid-template-rows: repeat(6, 5vw);
-  }
-
-  #skillsTable > *:nth-child(1) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-
-  #skillsTable > *:nth-child(2) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-  }
-
-  #skillsTable > *:nth-child(3) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-  }
-
-  #skillsTable > *:nth-child(4) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-  }
-
-  #skillsTable > *:nth-child(5) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-  }
-
-  #skillsTable > *:nth-child(6) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 3;
-  }
-
-  #skillsTable > *:nth-child(7) {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-  }
-
-  #skillsTable > *:nth-child(8) {
-    -ms-grid-row: 3;
-    -ms-grid-column: 2;
-  }
-
-  #skillsTable > *:nth-child(9) {
-    -ms-grid-row: 3;
-    -ms-grid-column: 3;
-  }
-
-  #skillsTable > *:nth-child(10) {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-  }
-
-  #skillsTable > *:nth-child(11) {
-    -ms-grid-row: 4;
-    -ms-grid-column: 2;
-  }
-
-  #skillsTable > *:nth-child(12) {
-    -ms-grid-row: 4;
-    -ms-grid-column: 3;
-  }
-
-  #skillsTable > *:nth-child(13) {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
-  }
-
-  #skillsTable > *:nth-child(14) {
-    -ms-grid-row: 5;
-    -ms-grid-column: 2;
-  }
-
-  #skillsTable > *:nth-child(15) {
-    -ms-grid-row: 5;
-    -ms-grid-column: 3;
-  }
-
-  #skillsTable > *:nth-child(16) {
-    -ms-grid-row: 6;
-    -ms-grid-column: 1;
-  }
-
-  #skillsTable > *:nth-child(17) {
-    -ms-grid-row: 6;
-    -ms-grid-column: 2;
-  }
-
-  #skillsTable > *:nth-child(18) {
-    -ms-grid-row: 6;
-    -ms-grid-column: 3;
   }
 
   #detail img {
@@ -534,14 +247,9 @@
   }
 
   .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   #aboutMySelf .card {
